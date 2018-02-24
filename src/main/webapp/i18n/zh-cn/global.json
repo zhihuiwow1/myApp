@@ -8,6 +8,7 @@
             "entities": {
                 "main": "数据",
                 "book": "Book",
+                "car": "Car",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

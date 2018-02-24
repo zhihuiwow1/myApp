@@ -1,0 +1,22 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": []
+        },
+        {
+            "fieldName": "color",
+            "fieldType": "String",
+            "fieldValidateRules": []
+        }
+    ],
+    "changelogDate": "20180224095130",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "car",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}
