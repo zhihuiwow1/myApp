@@ -1,0 +1,41 @@
+/**外出信息表**/
+entity EmployeeOuting(hrm_employee_Outing){
+      /**外出表主键ID*/
+      id String required maxlength(64),
+      /**用户ID*/
+      userId String required maxlength(64),
+      /**租户ID*/
+      tenantId String required maxlength(64),
+      /**员工id*/
+      employeeId String required maxlength(64),
+      /**职位*/
+      positionName String maxlength(64),
+      /**部门名称*/
+      departmentName String maxlength(64),
+      /**外出类型（1-请假；2-出差；3-外出)*/
+      outingType String maxlength(2),
+      /**外出开始时间*/
+      startTime ZonedDateTime,
+      /**外出结束时间*/
+      endTime ZonedDateTime,
+      /**外出状态（1-未开始；2-外出中；3-已结束；4-已取消）*/
+      outingState String maxlength(2),
+      /**外出具体事项*/
+      description String maxlength(500),
+      /**取消操作时-存入取消时间，提前结束操作-存入提前结束时间*/
+      operateTime ZonedDateTime,
+      /**创建者*/
+      createdBy String required maxlength(64),
+      /**创建时间*/
+      createdTime ZonedDateTime,
+      /**更新者*/
+      lastModifiedBy String maxlength(64),
+      /**更新时间*/
+      lastModifiedTime ZonedDateTime,
+      /**删除标记*/
+      delFlag Boolean,
+      /**数据库版本号*/
+      version Integer,
+      /**通知标志（1-发通知；0-不发通知）*/
+      notificationFlag String maxlength(1),
+}
